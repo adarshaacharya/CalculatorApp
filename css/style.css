@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #eaebec;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.calculator {
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; 
+  border: solid 1px #3a4655;
+
+  box-shadow: 0 8px 50px -7px black;
+}
+
+.calculator-screen {
+  border: none;
+  background: #3a4655;
+  width: 100%;
+  height: 180px;
+  padding: 20px;
+  color: #fff;
+  text-align: right;
+  padding: 10px;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+button {
+  height: 60px;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #333;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 50%,
+    rgba(0, 0, 0, 0.04)
+  );
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+    0 1px 0 0 rgba(255, 255, 255, 0.15);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+}
+
+button:hover {
+  background-color: #eaeaea;
+}
+
+.operator {
+  color: #337cac;
+}
+
+.equal-sign {
+  background-color: #2e86c0;
+  border-color: #337cac;
+  color: #fff;
+  height: 100%;
+  grid-area: 3 / 4 / 6 / 5;
+}
+
+.equal-sign:hover {
+  background-color: #4e9ed4;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.calculator-screen .previous-output {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.calculator-screen .current-output {
+  color: white;
+  font-size: 2.5rem;
+}
+
+
+
+
+button.operator {
+  color: #aeb3ba;
+  background: #404d5e;
+}
+
+button.operand {
+  color: #be5e53;
+  background: #404d5e;
+}
+
+button:hover {
+  background: #e0b612;
+  transform: rotate(5deg);
+}
+
+button.operator:hover,
+button.operand:hover {
+  background: #e0b612;
+  color: #fff;
+}
+
+.calc-button-row {
+    width: 100%;
+    background: #3C4857;
+  }
+  

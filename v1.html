@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- -->
+    <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+
+    <!-- Font awesome --> 
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./vendor/bootstrap.min.css">
+
+    <!--Style css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
+    <!--Media Query -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+</head>
+
+<body>
+    <section id="calculator" class="p-5">
+        <div class="container">
+
+            <form>
+
+              <div class="form-group">
+                <label for="value-1">First Value: </label>
+                <input type="text" class="form-control" id="value-1" required>
+              </div>
+
+              <div class="form-group">
+                <label for="value-2">Second Value: </label>
+                <input type="text" class="form-control" id="value-2"required>
+              </div>
+                
+              <div class="form-group">
+                <label for="option">Select Operation</label>
+                <select  class="form-control" id="option">
+                    <option value="add">Add</option>
+                    <option value="sub">Subract</option>
+                    <option value="mul">Multiply</option>
+                    <option value="div">Divide</option>
+                </select>
+            </div>
+
+
+                <button class="btn btn-primary btn-block mt-5" id="submit">Calculate</button>
+            </form>
+
+            <div id="output"></div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <!--Footer-->
+    <footer id="main-footer" class="py-3 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    Copyright &copy; <span id="year"></span> <br>
+                    Build with <i class="fa fa-heart"></i> by Aadarsha Acharya
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!--Jquery JS-->
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+
+    <!--Bootstrap JS-->
+    <script src="vendor/bootstrap.min.js"></script>
+
+    <!--Popper JS-->
+    <script src="vendor/popper.min.js"></script>
+
+    <!--Custom JS -->
+    <script src="js/v1.js"></script>
+
+
+    <script>
+        //JS Code Here
+    </script>
+
+</body>
+
+</html>
